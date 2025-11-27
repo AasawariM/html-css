@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application (web)</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Job Application Form (Web)</legend>
+        <div>
+          <label for="fname">Enter First Name: </label>
+          <input name="fname" id="fname" placeholder="Enter First Name" required/>
+          <label for="lname">Enter Last Name: </label>
+          <input name="lname" id="lname" placeholder="Enter Last Name" required/>
+        </div>
+        <br />
+        <label>Select Your Gender:</label>
+        <label for="m">Male</label>
+        <input type="radio" id="m" name="gender" value="Male" />
+        <label for="f">Female</label>
+        <input type="radio" id="f" name="gender" value="Female" />
+
+        <br />
+        <div>
+          Email: <input type="email" name="email" placeholder="Enter EmailId" required/>
+          <label for="role">Select Job Role:</label>
+          <select name="role" id="role">
+            <option>Manager</option>
+            <option>Trainee</option>
+            <option>Junior Developer</option>
+          </select>
+        </div>
+        <br />
+        Address:<textarea placeholder="Enter Address"></textarea>
+        <br />
+        <div>
+          City:<input placeholder="Enter City Name...." /> Pincode:<input
+            placeholder="Enter Pin Code"
+          />
+        </div>
+        <br />
+        <div>
+          Date:<input type="date" /> Upload Your CV:<input type="file" />
+        </div>
+        <br />
+        <input type="checkbox" name="terms" id="terms"  required/>
+        <label for="terms">I agree to the terms.</label>
+        <div>
+          <input type="submit" value="Apply Now" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
