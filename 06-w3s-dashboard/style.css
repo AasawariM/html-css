@@ -24,39 +24,14 @@ body {
 
 #sign-up {
   /*top and bottom | left and right */
-  padding: 20px 18px;
+  padding: 15px 18px;
   /* border: 2px solid black; */
   text-align: center;
 }
 
-#sign-up h1 {
-  font-size: 50px;
-  font-weight: bolder;
-}
-
-#sign-up h3 {
-  font-weight: 500;
+#sign-up p {
+  font-weight: normal;
   font-family: serif;
-}
-
-
-#sign-up-btn {
-  text-transform: capitalize;
-  height: 3em;
-  width: 16em;
-  padding: 18px 0px;
-  border-radius: 40px;
-  border: none;
-  font-weight: bold;
-  font-size: 18px;
-  color: white;
-  background-color: #04AA6D;
-
-}
-
-#sign-up-btn:hover {
-  background-color: #059862;
-  cursor: pointer;
 }
 
 #code-editor {
@@ -120,7 +95,7 @@ footer {
 #code-editor,
 #hero-section,
 footer {
-  background-color: #282A35 !important;
+  background-color: #282A35;
 }
 
 footer p {
@@ -208,12 +183,12 @@ footer p {
 }
 
 .lang-list li:last-child {
-  background-color: #FFC0C7 !important;
+  background-color: #FFC0C7;
   color: #000;
 }
 
 .lang-list li:last-child:hover {
-  background-color: #ffb3bb !important;
+  background-color: #ffb3bb;
   cursor: pointer;
 }
 
@@ -267,7 +242,7 @@ aside {
 }
 
 .css {
-  background-color: #FFF4A3 !important;
+  background-color: #FFF4A3;
   padding: 40px;
 }
 
@@ -279,4 +254,73 @@ aside {
 .css .lang-list li:nth-child(2) {
   background-color: #282A35;
   color: #fff;
+}
+
+.w3s-spaces {
+  text-transform: capitalize;
+  padding: 30px;
+}
+
+.w3s-spaces .card-para {
+  margin: 0px 440px;
+  line-height: 40px;
+}
+
+.w3s-spaces a {
+  color: #04AA6D;
+  text-decoration: underline;
+}
+
+.color-picker {
+  text-transform: capitalize;
+  padding: 40px;
+  background-color: #F3ECEA;
+}
+
+.card-title {
+  font-size: 50px;
+}
+
+.card-para {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-img {
+  padding: 20px;
+}
+
+.color-picker .card-img {
+  /* margin: 20px; */
+  height: 160px;
+  /* border: 2px solid black; */
+}
+
+.color-picker img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.web-temp {
+  text-transform: capitalize;
+  padding: 40px;
+  background-color: #E7E9EB;
+}
+
+.browse-btn {
+  width: 90vh;
+  /* text-align: center; */
+  padding: 18px 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #282A35;
+  text-transform: capitalize;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.browse-btn:hover {
+  background-color: #000;
 }
