@@ -18,7 +18,7 @@
     <!-- <h1>Hello World!</h1> -->
     <!--inline css-->
     <nav>
-      <ul class="navbar" style="text-transform: uppercase">
+      <ul class="navbar text-center" style="text-transform: uppercase">
         <li><a href="#home">Html</a></li>
         <li><a href="#home">Css</a></li>
         <li><a href="#home">Javascript</a></li>
@@ -33,10 +33,79 @@
         <li><a href="#home">c#</a></li>
       </ul>
     </nav>
-    <div id="hero-section">
+    <div id="hero-section" class="text-center">
       <h1>Learn to Code</h1>
       <h2>With the world's largest web developer site.</h2>
     </div>
+    <div class="html text-center">
+      <div class="content">
+        <h1>html</h1>
+        <p>The language for building web pages</p>
+        <ul class="lang-list" style="padding-left: 20%">
+          <li>learn HTML</li>
+          <li>video tutorial</li>
+          <li>HTML reference</li>
+          <li>get certified</li>
+        </ul>
+      </div>
+      <aside class="grey-border">
+        <!-- The <aside> HTML element represents a portion of a document whose content is only 
+        indirectly related to the document's main content.
+        Asides are frequently presented as sidebars or call-out boxes. -->
+        <h2>HTML Example:</h2>
+        <div class="code">
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre
+          >
+        </div>
+        <button class="green-btn">try it yourself</button>
+      </aside>
+    </div>
+    <!-- css -->
+    <div class="css text-center">
+      <div class="content">
+        <h1>css</h1>
+        <p>The language for styling web pages</p>
+        <ul class="lang-list" style="padding-left: 20%">
+          <li>learn CSS</li>
+          <li>CSS reference</li>
+          <li>get certified</li>
+        </ul>
+      </div>
+      <aside class="grey-border">
+        <!-- The <aside> HTML element represents a portion of a document whose content is only 
+        indirectly related to the document's main content.
+        Asides are frequently presented as sidebars or call-out boxes. -->
+        <h2>HTML Example:</h2>
+        <div class="code">
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;HTML Tutorial&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre
+          >
+        </div>
+        <button class="green-btn">try it yourself</button>
+      </aside>
+    </div>
+    <!--  -->
     <div id="sign-up">
       <h1>Log in / Sign Up</h1>
       <h3>
@@ -46,11 +115,11 @@
       </h3>
       <img src="assets/images/dashboard1.png" height="600" />
       <p>
-        <a><button id="sign-up-btn">sign up for free</button></a>
+        <button id="sign-up-btn">sign up for free</button>
       </p>
     </div>
     <div id="code-editor">
-      <div class="editor-text">
+      <div class="text-center">
         <h1>Code Editor</h1>
         <h3>
           With our online code editor, you can edit code and view the result in
@@ -60,20 +129,25 @@
       </div>
       <div class="editor-btn">
         <p>
-          <a
-            ><button id="f-editor-btn">
-              try frontend editor<span>(html/css/js)</span>
-            </button></a
-          >
+          <button id="f-editor-btn">
+            try frontend editor<span>(html/css/js)</span>
+          </button>
         </p>
         <p>
-          <a
-            ><button id="b-editor-btn">
-              try backend editor<span>(python/php/java/c..)</span>
-            </button></a
-          >
+          <button id="b-editor-btn">
+            try backend editor<span>(python/php/java/c..)</span>
+          </button>
         </p>
       </div>
     </div>
+    <footer class="text-center">
+      <p>
+        W3Schools is optimized for learning and training. Examples might be
+        simplified to improve reading and learning. Tutorials, references, and
+        examples are constantly reviewed to avoid errors, but we cannot warrant
+        full correctness of all content. While using W3Schools, you agree to
+        have read and accepted our terms of use, cookies and privacy policy.
+      </p>
+    </footer>
   </body>
 </html>
