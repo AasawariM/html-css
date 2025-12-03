@@ -98,15 +98,15 @@ body {
 
 #hero-section h1 {
   font-size: 70px;
-  background-color: #04AA6D;
-  position: relative;
+  /* background-color: #04AA6D; */
+  /* position: relative; */
 }
 
 /* before and after pseudo elements */
 
 /* The ::after pseudo-element is used to insert some content after the content of a specified element */
 
-#hero-section h1::after {
+/* #hero-section h1::after {
   content: "made by aasawari";
   padding: 2px 5px;
   font-size: 16px;
@@ -115,11 +115,11 @@ body {
   display: inline-block;
   position: absolute;
   bottom: 0px;
-}
+} */
 
 /* The ::before pseudo-element is used to insert some content before the content of a specified element. */
 
-#hero-section h1::before {
+/* #hero-section h1::before {
   content: "aasawari mandhare";
   padding: 2px 5px;
   font-size: 16px;
@@ -128,7 +128,7 @@ body {
   display: inline-block;
   position: absolute;
   top: -10px;
-}
+} */
 
 #hero-section h2 {
   color: #FFF4A3;
@@ -494,3 +494,58 @@ aside {
 /* bottom: 50px; */
 /* right: 50px; */
 /* } */
+
+
+/* CSS LAYOUTS */
+/* float */
+.demo_img {
+  float: left;
+  /* mainly we can use left right or none */
+  /* with this image will be taken out of document flow just like absoulte positioning element but the diff here is
+  all other elements will float around it*/
+  margin-right: 20px;
+}
+
+.demo_para {
+  /* padding-left: 50px; */
+  /* paragraph starts behind the image so need more padding */
+  /* float: left; */
+  clear: left;
+  padding-top: 20px;
+}
+
+/* flexbox */
+/* to use flexbox we have to  set display property to flex for any container element which have many child elements */
+.container {
+  background-color: #ddd;
+  width: 300px;
+  margin: 40px;
+  display: flex;
+  /* to align all the flex items vertically centered we use below property  */
+  /* by defualt value is stretch (as tall as tallest element) for align items */
+  align-items: center;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+
+  /* to align items horizontally inside a container use justify-content */
+  justify-content: center;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+}
+
+.box1 {
+  background-color: pink;
+}
+
+.box2 {
+  background-color: green;
+}
+
+.box3 {
+  background-color: blueviolet;
+  height: 100px;
+}
+
+.box4 {
+  background-color: orange;
+}
