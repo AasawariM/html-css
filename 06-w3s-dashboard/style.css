@@ -12,7 +12,7 @@
 body {
   font-family: serif;
   background-color: #fff;
-  position: relative;
+  /* position: relative; */
 }
 
 .menu {
@@ -98,6 +98,36 @@ body {
 
 #hero-section h1 {
   font-size: 70px;
+  background-color: #04AA6D;
+  position: relative;
+}
+
+/* before and after pseudo elements */
+
+/* The ::after pseudo-element is used to insert some content after the content of a specified element */
+
+#hero-section h1::after {
+  content: "made by aasawari";
+  padding: 2px 5px;
+  font-size: 16px;
+  background-color: yellow;
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* The ::before pseudo-element is used to insert some content before the content of a specified element. */
+
+#hero-section h1::before {
+  content: "aasawari mandhare";
+  padding: 2px 5px;
+  font-size: 16px;
+  background-color: rgb(255, 42, 0);
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  top: -10px;
 }
 
 #hero-section h2 {
@@ -305,6 +335,10 @@ footer p {
   cursor: pointer;
 }
 
+.highlight {
+  text-transform: uppercase;
+}
+
 aside {
   display: inline-block;
   text-align: left;
@@ -449,14 +483,14 @@ aside {
   background-color: #000;
 }
 
-#like {
-  font-size: 20px;
-  padding: 10px;
-  cursor: pointer;
-  position: absolute;
-  /* absolute positioning is used for simple elements like button and not for complex layouts */
-  /* by default this element is positioned in relation to view port */
-  /* to make it absolute as per the element and not view port we have to make that element relative and it should be the first parent element of this button */
-  bottom: 50px;
-  right: 50px;
-}
+/* #like { */
+/* font-size: 20px; */
+/* padding: 10px; */
+/* cursor: pointer; */
+/* position: absolute; */
+/* absolute positioning is used for simple elements like button and not for complex layouts */
+/* by default this element is positioned in relation to view port */
+/* to make it absolute as per the element and not view port we have to make that element relative and it should be the first parent element of this button */
+/* bottom: 50px; */
+/* right: 50px; */
+/* } */
