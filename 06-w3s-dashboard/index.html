@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- external css -->
     <link href="/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Document</title>
     <!-- internal css -->
     <style>
@@ -17,38 +26,76 @@
   <body>
     <!-- <h1>Hello World!</h1> -->
     <header class="menu">
-      <ul class="left-menu">
-        <li>tutorials</li>
-        <li>references</li>
-        <li>exercises</li>
-        <li>certifications</li>
-      </ul>
-      <input class="search-input" placeholder="Search..." />
-      <ul class="right-menu">
-        <li>spaces</li>
-        <li>for teachers</li>
-        <li>upgrade</li>
-        <li>get certified</li>
-      </ul>
-      <button class="sign-in-btn">sign in</button>
+      <div class="left-menu">
+        <a href="https://www.w3schools.com/">
+          <img id="logo" src="/assets/images/logo.png" />
+        </a>
+        <a href="#tutorial">tutorials<i class="fa fa-caret-down"></i></a>
+        <a href="#references">references <i class="fa fa-caret-down"></i></a>
+        <a>exercises <i class="fa fa-caret-down"></i></a>
+        <a>certificates<i class="fa fa-caret-down"></i></a>
+        <input class="search-input" placeholder="Search..." />
+        <a id="dots-icon"><img src="/assets/images/dots.png" width="22px" /></a>
+      </div>
+      <div class="right-menu">
+        <a><img src="/assets/images/code.png" width="20px" />spaces</a>
+        <a><img src="/assets/images/degree.png" width="20px" />teachers </a>
+        <a><img src="/assets/images/sparkle.png" width="14px" />upgrade</a>
+        <a><img src="/assets/images/cart.png" width="20px" />get certified </a>
+        <button class="sign-in-btn">
+          <svg
+            width="14"
+            height="14"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="tnb-sign-in-icon"
+          >
+            <path
+              d="M7 7C8.933 7 10.5 5.433 10.5 3.5C10.5 1.567 8.933 0 7 0C5.067 0 3.5 1.567 3.5 3.5C3.5 5.433 5.067 7 7 7ZM9.33333 3.5C9.33333 4.78866 8.28866 5.83333 7 5.83333C5.71134 5.83333 4.66667 4.78866 4.66667 3.5C4.66667 2.21134 5.71134 1.16667 7 1.16667C8.28866 1.16667 9.33333 2.21134 9.33333 3.5Z"
+              fill="white"
+            ></path>
+            <path
+              d="M14 12.8333C14 14 12.8333 14 12.8333 14H1.16667C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333ZM12.8333 12.8293C12.8316 12.5414 12.6539 11.6789 11.8625 10.8875C11.1016 10.1265 9.67062 9.33333 6.99999 9.33333C4.32936 9.33333 2.89841 10.1265 2.13745 10.8875C1.34605 11.6789 1.16833 12.5414 1.16667 12.8293H12.8333Z"
+              fill="white"
+            ></path>
+          </svg>
+          sign in
+        </button>
+      </div>
     </header>
 
     <!--inline css-->
     <nav>
-      <ul class="navbar text-center" style="text-transform: uppercase">
-        <li>Html</li>
-        <li>Css</li>
-        <li>Javascript</li>
-        <li>python</li>
-        <li>sql</li>
-        <li>java</li>
-        <li>php</li>
-        <li>how to</li>
-        <li>w3.css</li>
-        <li>c</li>
-        <li>c++</li>
-        <li>c#</li>
-      </ul>
+      <div class="navbar text-center" style="text-transform: uppercase">
+        <button><</button>
+        <a>Html</a>
+        <a>Css</a>
+        <a>Javascript</a>
+        <a>sql</a>
+        <a>python</a>
+        <a>java</a>
+        <a>php</a>
+        <a>how to</a>
+        <a>w3.css</a>
+        <a>c</a>
+        <a>c++</a>
+        <a>c#</a>
+        <a>bootstrap</a>
+        <a>react</a>
+        <a>mysql</a>
+        <a>jquery</a>
+        <a>excel</a>
+        <a>xml</a>
+        <a>django</a>
+        <a>numpy</a>
+        <a>pandas</a>
+        <a>nodejs</a>
+        <a>dsa</a>
+        <a>typescript</a>
+        <a>angular</a>
+        <button>></button>
+      </div>
     </nav>
     <div id="hero-section" class="text-center">
       <h1>Learn to Code</h1>
@@ -56,6 +103,19 @@
       <input placeholder="Search our tutorials,e.g HTML" />
       <h4>not sure where to begin?</h4>
     </div>
+    <svg
+      style="background-color: #d9eee1"
+      width="100%"
+      height="70"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        id="wavepath"
+        d="M0,0  L110,0C35,150 35,0 0,100z"
+        fill="#282A35"
+      ></path>
+    </svg>
     <div class="html text-center">
       <div class="content">
         <h1>html</h1>
