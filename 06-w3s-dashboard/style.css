@@ -195,6 +195,7 @@ body {
 
 #hero-section h1 {
   font-size: 70px;
+  font-weight: 700;
   /* background-color: #04AA6D; */
   /* position: relative; */
 }
@@ -230,10 +231,10 @@ body {
 #hero-section h2 {
   color: #FFF4A3;
   margin: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
-#hero-section input {
+/* #hero-section input {
   width: 30%;
   padding: 10px;
   padding-left: 25px;
@@ -244,8 +245,60 @@ body {
   border-radius: 25px;
 }
 
+#input-btn {
+  border-radius: 25px;
+  width: 20%;
+  padding: 10px;
+  background: #04AA6D;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #282A35;
+  border-left: none;
+  cursor: pointer;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+} */
+
+.search-box {
+  display: flex;
+  /* width: 40%; */
+  padding: 10px 30%;
+}
+
+.search-box input {
+  /* flex: 1; */
+  padding: 10px;
+  background-color: white;
+  /* border: 1px solid #282A35; */
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  padding-left: 25px;
+  margin-left: 20px;
+  font-family: inherit;
+  font-weight: 600;
+  border-right: 1px solid #04AA6D;
+  border-radius: 25px 0 0 25px;
+}
+
+#input-btn {
+  width: 20%;
+  background: #04AA6D;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  font-size: 17px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+}
+
+#input-btn:hover {
+  background-color: #059862;
+  color: white;
+}
+
 #hero-section h4 {
-  padding-top: 40px;
+  padding-top: 25px;
   text-transform: capitalize;
   color: white;
   font-weight: bold;
