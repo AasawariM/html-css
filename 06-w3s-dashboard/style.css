@@ -528,24 +528,38 @@ aside {
   /* align-items: flex-end; */
 
   /* to align items horizontally inside a container use justify-content */
-  justify-content: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
+  /* justify-content: space-between; */
   /* justify-content: space-evenly; */
 }
 
-.box1 {
+#box1 {
   background-color: pink;
+  align-self: flex-end;
+  order: -1;
+  /* flex-grow: 0; */
+  /* flex-shrink: 1px; */
+  /* flex-basis: 200px; */
+  /* flex: 1 1 100px; */
 }
 
-.box2 {
+#box2 {
   background-color: green;
+  order: 1;
 }
 
-.box3 {
+#box3 {
   background-color: blueviolet;
   height: 100px;
 }
 
-.box4 {
+#box4 {
   background-color: orange;
+  order: 2;
+}
+
+.boxes {
+  /* no need to add manually the margin between items if we have gap propery for flex container */
+  /* margin-right: 10px; */
 }
