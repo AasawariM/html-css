@@ -328,7 +328,11 @@ body {
 
 #code-editor {
   color: white;
-  padding: 50px;
+  padding: 70px 3px 85px 3px;
+}
+
+#code-editor .h1 {
+  margin: 2px 0 -20px 0;
 }
 
 .text-center {
@@ -337,11 +341,13 @@ body {
 
 #code-editor img {
   padding: 20px 0;
+  width: 70%;
+  height: auto;
 }
 
 .editor-btn {
   /* border: 2px solid violet; */
-  padding-left: 35ch;
+  padding-left: 15%;
 }
 
 #f-editor-btn {
@@ -354,6 +360,7 @@ body {
   text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 20px;
+  border: none;
 }
 
 #b-editor-btn {
@@ -365,6 +372,7 @@ body {
   color: #000;
   text-transform: capitalize;
   font-weight: 600;
+  border: none;
 }
 
 #f-editor-btn:hover {
@@ -379,23 +387,117 @@ body {
 
 footer {
   color: white;
-  border: 2px solid black;
-  /*this is a shorthand property for border width,style and color properties*/
-  /* padding: 10px; */
   font-size: 14px;
+}
+
+.f-footer {
+  padding: 40px 80px 20px 80px;
+  max-width: 1500px;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+
+.links {
+  /* border: 2px solid black; */
+  display: inline-flex;
+  gap: 10px;
+}
+
+.footerlinks {
+
+  padding: 40px 60px;
+}
+
+.footerlinks a {
+  color: #FFF4A3;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footerlinks a:hover {
+  text-decoration: underline;
+}
+
+.footerlinks:nth-child(1) {
+  padding: 30px 10px 30px 40px;
+}
+
+.footerlinks2 {
+  display: inline-block;
+  padding-left: 90px;
+  padding-right: 135px;
+  color: #ddd;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.footerlinks2 h5 {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footerlinks2 a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footerlinks2 a:hover {
+  color: #FFF4A3;
+}
+
+.f-footer .icons {
+  /* border: 2px solid black; */
+  color: #ddd;
+  text-align: center;
+  padding: 60px 40px 10px 40px;
+}
+
+.icons a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.icons a:hover {
+  color: #FFF4A3;
+}
+
+footer p {
+  /* border: 2px solid black; */
+  color: #ddd;
+  padding: 10px 370px;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 500;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer span:hover {
+  color: #FFF4A3;
 }
 
 #code-editor,
 #hero-section,
 footer {
   background-color: #282A35;
-}
-
-footer p {
-  /* background-color: #444; */
-  /*descendent selector  */
-  margin: 100px;
-  /* border: 2px solid black; */
+  /* background-color: #04AA6D; */
 }
 
 .html,
@@ -413,12 +515,13 @@ footer p {
   /* border: 2px solid black; */
   display: inline-block;
   margin-right: 120px;
+  padding: 32px;
   /* width: fit-content; */
   /* padding: 20px; */
 }
 
 .content h1 {
-  font-size: 65px;
+  font-size: 100px;
   text-transform: uppercase;
 
 }
@@ -426,7 +529,7 @@ footer p {
 .content p {
   /* border: 2px solid black; */
   /* width: fit-content; */
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
 }
 
@@ -525,13 +628,13 @@ aside {
   border: none;
   color: white;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: 600;
   /* font-family: sans-serif; */
-  font-size: 16px;
-  padding: 12px 0;
-  width: 200px;
-  margin: 10px 0;
-  border-radius: 50px;
+  font-size: 20px;
+  padding: 11px 18px;
+  width: 300px;
+  margin-bottom: 50px;
+  border-radius: 25px;
 }
 
 .green-btn:hover {
@@ -560,7 +663,9 @@ aside {
 }
 
 .w3s-spaces .card-para {
-  margin: 0 440px;
+  margin: 0 350px;
+  font-size: 24px;
+  font-weight: 400px;
   line-height: 40px;
 }
 
@@ -585,14 +690,15 @@ aside {
 }
 
 .card-title {
-  font-size: 50px;
+  font-size: 65px;
+  font-weight: 700;
   padding: 10px;
 }
 
 .card-para {
   font-size: 20px;
   padding: 8px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .card-img {
@@ -628,10 +734,247 @@ aside {
   text-transform: capitalize;
   border-radius: 25px;
   margin: 10px;
+  margin-bottom: 60px;
 }
 
 .browse-btn:hover {
   background-color: #000;
+}
+
+#career {
+  background-color: #282A35;
+  color: #FFC0C7;
+  padding: 30px 120px 30px 120px;
+  padding-bottom: 100px;
+  position: relative;
+
+}
+
+#career h1 {
+  font-size: 62px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#career p {
+  font-size: 52px;
+  margin-top: 1em;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+#career button {
+  background-color: #059862;
+  border-radius: 50px;
+  padding: 17px 55px;
+  font-size: 20px;
+  color: white;
+  margin: 16px;
+  border: none;
+}
+
+#career button:hover {
+  background-color: #04AA6D;
+}
+
+#w3_cert_arrow_default {
+  position: absolute;
+  right: 209px;
+  width: 220px;
+  transform: rotate(5deg);
+  bottom: 0px;
+  z-index: 1;
+}
+
+#w3_cert_badge_default {
+  position: absolute;
+  right: 230px;
+  width: 220px;
+  transform: rotate(10deg);
+  bottom: -60px;
+}
+
+#how-to {
+  text-align: center;
+  background-color: white;
+  margin: 100px 0px 200px 0px;
+}
+
+#how-to h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+#how-to h4 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+
+#how-to h6 {
+  margin-top: 19px;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.slideshow {
+  background: #f1f1f1;
+  margin: 10px 300px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 15px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+.vblock {
+  /* display: inline-block; */
+  height: 80px;
+  margin-top: -10px;
+  position: absolute;
+  left: 48.5%;
+  /* border: 2px solid black; */
+  border-left: 50px solid #282A35;
+}
+
+.how-to-btn {
+  position: absolute;
+  left: 38%;
+  margin: auto;
+  margin-top: 70px;
+  text-transform: capitalize;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 16px;
+  color: white;
+  background-color: #282A35;
+  width: 25%;
+}
+
+.how-to-btn:hover {
+  background-color: #04AA6D;
+}
+
+.editor {
+  /* border: 2px solid red; */
+  /* background: #f1f1f1; */
+  padding: 10px;
+  /* background-color: #fff; */
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.editor p {
+  text-align: start;
+  display: inline-block;
+  margin-left: 120px;
+  width: 600px;
+  background-color: white;
+  padding-left: 10px;
+}
+
+.dots3 {
+
+  align-self: center;
+  /* border: 2px solid red; */
+}
+
+.dots {
+  height: 18px;
+  width: 18px;
+  margin-top: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 3px;
+}
+
+#dot1 {
+  background-color: #ED594A;
+}
+
+#dot2 {
+  background-color: #FDD800;
+}
+
+#dot3 {
+  background-color: #5AC05A;
 }
 
 /* ********************card 3****************************************** */
@@ -652,8 +995,12 @@ aside {
   padding: 3%;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
+.card-item:hover {
+  opacity: 0.9;
+}
 
 .card-3 h1 {
   font-size: 45px;
@@ -679,6 +1026,7 @@ aside {
   border-radius: 25px;
   padding: 8px 16px;
   width: 200px;
+  cursor: pointer;
 }
 
 .card-3 .card-btn:hover {
@@ -729,6 +1077,11 @@ aside {
   text-align: center;
   border-radius: 5px;
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-item2:hover {
+  opacity: 0.9;
 }
 
 #c21 {
@@ -775,10 +1128,15 @@ aside {
   font-size: 30px;
   font-weight: 500;
   margin: 25px;
-  padding: 3%;
+  padding: 2%;
   text-align: center;
   border-radius: 5px;
   text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-item1:hover {
+  opacity: 0.9;
 }
 
 #c31 {
