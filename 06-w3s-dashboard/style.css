@@ -1328,9 +1328,25 @@ aside {
   /* implicit row and explicit  rows */
   /* this will create a extra row  which will be called as implicit row as automatically added bcz we run out of space in grid,
    we did specify sizes for 2 rows through grid-template-rows below*/
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   /* to size rows = heights*/
-  grid-template-rows: 200px 300px;
+  /* grid-template-rows: 200px 300px; */
+
+  /* sizing grid rows */
+
+  grid-template-rows: 1fr 1fr;
+  /* with this above 1fr 1fr,both the rows will take height as we defined for 3rd element i.e 140px i.e row track is defined by tallest element here */
+  /* try by removing the 140px */
+  /* now as element tailwind css height will be more compare to others,now all the elements will take its height */
+  /* we can even manually give height for the container here and check */
+  height: 500px;
+  /* try changing the fr units */
+  /* grid-template-rows: 1fr 2fr; */
+  /* grid-template-rows: 2fr 1fr; */
+  grid-template-rows: auto 1fr;
+  /* auto takes only space element needs and other will try to fill the empty space inside the container*/
+
+
   /* to give gap between grid items */
   /* gap: 10px; */
   /* grid-gap: 10px; */
@@ -1348,7 +1364,7 @@ aside {
 
 .d3 {
   background-color: red;
-  height: 140px;
+  /* height: 140px; */
   /* entire row will have the same height as this */
 }
 
