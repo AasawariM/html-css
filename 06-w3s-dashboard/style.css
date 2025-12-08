@@ -103,7 +103,7 @@ body {
 
 .right-menu a {
   text-transform: capitalize;
-  padding: 16px 7px;
+  padding: 10px;
   color: #000;
   text-decoration: none;
 }
@@ -121,14 +121,19 @@ body {
 }
 
 .right-menu a:hover {
-  background-color: #04AA6D;
-  color: white;
+  /* background-color: #04AA6D; */
+  background-color: #eeeeee;
+  border-radius: 50px;
 }
 
 .right-menu a:last-child {
   background-color: transparent;
 }
 
+.menu-prev,
+.menu-next {
+  /* position: fixed; */
+}
 
 .sign-in-btn {
   /* position: relative; */
@@ -180,7 +185,7 @@ body {
   /* width: auto; */
   font-size: 15px;
   line-height: 1.5px;
-  padding: 6px 15px;
+  padding: 15px;
 }
 
 .navbar a:hover {
@@ -630,10 +635,10 @@ aside {
   text-transform: capitalize;
   font-weight: 600;
   /* font-family: sans-serif; */
-  font-size: 20px;
-  padding: 11px 18px;
-  width: 300px;
-  margin-bottom: 50px;
+  font-size: 16px;
+  padding: 11px 15px;
+  width: 200px;
+  margin: 10px 0px 50px 0px;
   border-radius: 25px;
 }
 
@@ -739,6 +744,41 @@ aside {
 
 .browse-btn:hover {
   background-color: #000;
+}
+
+
+/* for teachers */
+.for-teachers {
+  background-color: #282A35;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 80px 170px;
+}
+
+.for-teachers h4,
+.for-teachers h5,
+.for-teachers button {
+  margin: 10px 0px 0px 100px;
+  font-size: 20px;
+}
+
+.left-content h4 {
+  margin-bottom: 40px;
+}
+
+.left-content h5 {
+  font-weight: 500;
+  /* display: block; */
+}
+
+.left-content i {
+  margin-right: 10px;
+}
+
+.for-teachers button {
+  margin-top: 50px;
 }
 
 #career {
@@ -1257,4 +1297,56 @@ aside {
 .boxes {
   /* no need to add manually the margin between items if we have gap propery for flex container */
   /* margin-right: 10px; */
+}
+
+/* CSS GRID */
+
+.container-1 {
+  margin: 40px;
+  background-color: #ddd;
+  font-size: 40px;
+  display: grid;
+  /* to size columns = widths */
+  grid-template-columns: 200px 150px 180px 150px;
+  /* as many widhts,that many columns created with respective widths */
+
+
+  /* to size rows = heights*/
+  grid-template-rows: 200px 300px;
+
+  /* to give gap between grid items */
+  /* gap: 10px; */
+  /* grid-gap: 10px; */
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.d1 {
+  background-color: pink;
+}
+
+.d2 {
+  background-color: purple;
+}
+
+.d3 {
+  background-color: red;
+  height: 140px;
+  /* entire row will have the same height as this */
+}
+
+.d4 {
+  background-color: green;
+}
+
+.d5 {
+  background-color: orange;
+}
+
+.d6 {
+  background-color: blue;
+}
+
+.d7 {
+  background-color: yellow;
 }
