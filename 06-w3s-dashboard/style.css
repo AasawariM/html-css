@@ -1307,13 +1307,30 @@ aside {
   font-size: 40px;
   display: grid;
   /* to size columns = widths */
-  grid-template-columns: 200px 150px 180px 150px;
+  /* grid-template-columns: 200px 150px 180px 150px; */
   /* as many widhts,that many columns created with respective widths */
 
+  /* to create a grid where all 4 columns have the same width and ocuppy the remaining space (as we resize the screen size) we use fr unit */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /* 3 columns but all the same size i.e width */
+  /* grid-template-columns: 1fr 1fr 1fr; */
 
+  /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+  /* grid-template-columns: 3fr 1fr 1fr 1fr;   first col gets half of the width  */
+
+  /* auto keyword */
+  /* grid-template-columns: 1fr 1fr 1fr auto; */
+
+  /* instead of writing 1fr 4 times for 4 columns like = grid-template-columns: 1fr 1fr 1fr 1fr; we write below function */
+  /* grid-template-columns: repeat(4, 1fr);
+ */
+
+  /* implicit row and explicit  rows */
+  /* this will create a extra row  which will be called as implicit row as automatically added bcz we run out of space in grid,
+   we did specify sizes for 2 rows through grid-template-rows below*/
+  grid-template-columns: repeat(3, 1fr);
   /* to size rows = heights*/
   grid-template-rows: 200px 300px;
-
   /* to give gap between grid items */
   /* gap: 10px; */
   /* grid-gap: 10px; */
