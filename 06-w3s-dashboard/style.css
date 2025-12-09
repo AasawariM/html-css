@@ -1360,6 +1360,9 @@ aside {
 
 .d1 {
   background-color: pink;
+  /* grid-row: 1 / 5; */
+  /* grid-row: 1 / span 5; */
+  grid-row: 1 / -1;
 }
 
 .d2 {
@@ -1380,6 +1383,10 @@ aside {
   grid-column: 2 / -1;
   /* why -1 check grid line numbers for this */
 
+
+  /* spanning for rows i.e if we want to span an item using row number */
+  /* lets consider element 7  */
+  /* lets consider element 1 also check */
 }
 
 .d4 {
@@ -1396,6 +1403,7 @@ aside {
 
 .d7 {
   background-color: yellow;
+  grid-row: 3 / 6;
 }
 
 .d8 {
