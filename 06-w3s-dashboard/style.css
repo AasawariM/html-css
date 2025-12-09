@@ -1435,11 +1435,34 @@ aside {
   font-size: 40px;
   margin: 40px;
 
+  /* container width and height */
   width: 700px;
   height: 600px;
   /* CSS GRID */
   display: grid;
+  gap: 50px;
   grid-template-columns: 125px 200px 125px;
   grid-template-rows: 250px 100px;
 
+  /* aliging both tracks inside the grid container and aligning grid items inside the track  */
+  /* here in css grid we have end and start as values and not flex-start , flex-end (flexbox) */
+
+
+  /*1. aliging grid tracks(rows and columns) inside grid container = distributing empty space*/
+  /* possible bcz grid container is bigger than the grid itself (sum of widths of columns + gap ) */
+  justify-content: center;
+  /* justify-content: space-between; */
+  align-content: center;
+
+  /*2. aligning grid items inside the cells = moving items around inside the cells(cell here is the colored part)*/
+  /* vertically = col axis */
+  align-items: center;
+  /* horizontally = row axis*/
+  justify-items: center;
+}
+
+/* overwriting align-items and justify-items for single item on individual item */
+.d3 {
+  align-self: end;
+  justify-self: end;
 }
