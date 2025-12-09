@@ -1339,11 +1339,11 @@ aside {
   /* try by removing the 140px */
   /* now as element tailwind css height will be more compare to others,now all the elements will take its height */
   /* we can even manually give height for the container here and check */
-  height: 500px;
+  /* height: 500px; */
   /* try changing the fr units */
   /* grid-template-rows: 1fr 2fr; */
   /* grid-template-rows: 2fr 1fr; */
-  grid-template-rows: auto 1fr;
+  /* grid-template-rows: auto 1fr; */
   /* auto takes only space element needs and other will try to fill the empty space inside the container*/
 
 
@@ -1351,7 +1351,11 @@ aside {
   /* gap: 10px; */
   /* grid-gap: 10px; */
   column-gap: 20px;
-  row-gap: 20px;
+  row-gap: 40px;
+
+  /* place a certain grid item into another grid cell (that is not into its defualt one)*/
+  /* placing element 8 sass on the place of css i.e element 2 , go to element 8*/
+  /* same way element 3 in the place of 5 */
 }
 
 .d1 {
@@ -1364,8 +1368,18 @@ aside {
 
 .d3 {
   background-color: red;
-  /* height: 140px; */
+  height: 150px;
   /* entire row will have the same height as this */
+  /* here item span across 3 cells from 2-3-4-5*/
+  grid-column: 2 / 5;
+  grid-column: 2 / span 3;
+  /* 2 / span 3  = means start at 2 and span across 3 cells */
+  grid-row: 2 / 3;
+
+  /* when we want one element to span all the way to the end then we use -1 */
+  grid-column: 2 / -1;
+  /* why -1 check grid line numbers for this */
+
 }
 
 .d4 {
@@ -1382,4 +1396,10 @@ aside {
 
 .d7 {
   background-color: yellow;
+}
+
+.d8 {
+  background-color: burlywood;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
 }
