@@ -88,10 +88,27 @@ body {
 }
 
 #dots-icon:hover {
-  background-color: #f1f1f1 !important;
+  background-color: #f1f1f1;
   cursor: pointer;
 }
 
+#dots-icon:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 90px;
+  background-color: #282A35;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  margin-left: 35px;
+  position: absolute;
+  /* z-index: 1; */
+}
 
 .right-menu {
   /* background-color: gray; */
