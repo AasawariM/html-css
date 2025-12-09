@@ -1356,13 +1356,14 @@ aside {
   /* place a certain grid item into another grid cell (that is not into its defualt one)*/
   /* placing element 8 sass on the place of css i.e element 2 , go to element 8*/
   /* same way element 3 in the place of 5 */
+
+
+  /* TEMP for container-2 */
+  display: none;
 }
 
 .d1 {
   background-color: pink;
-  /* grid-row: 1 / 5; */
-  /* grid-row: 1 / span 5; */
-  grid-row: 1 / -1;
 }
 
 .d2 {
@@ -1373,20 +1374,6 @@ aside {
   background-color: red;
   height: 150px;
   /* entire row will have the same height as this */
-  /* here item span across 3 cells from 2-3-4-5*/
-  grid-column: 2 / 5;
-  grid-column: 2 / span 3;
-  /* 2 / span 3  = means start at 2 and span across 3 cells */
-  grid-row: 2 / 3;
-
-  /* when we want one element to span all the way to the end then we use -1 */
-  grid-column: 2 / -1;
-  /* why -1 check grid line numbers for this */
-
-
-  /* spanning for rows i.e if we want to span an item using row number */
-  /* lets consider element 7  */
-  /* lets consider element 1 also check */
 }
 
 .d4 {
@@ -1403,11 +1390,56 @@ aside {
 
 .d7 {
   background-color: yellow;
-  grid-row: 3 / 6;
 }
 
 .d8 {
   background-color: burlywood;
+}
+
+/* spanning ke liye */
+.d3 {
+  /* here item span across 3 cells from 2-3-4-5*/
+  /* grid-column: 2 / 5; */
+  /* grid-column: 2 / span 3; */
+  /* 2 / span 3  = means start at 2 and span across 3 cells */
+  /* grid-row: 2 / 3; */
+
+  /* when we want one element to span all the way to the end then we use -1 */
+  /* grid-column: 2 / -1; */
+  /* why -1 check grid line numbers for this */
+}
+
+/* 
+.d8 {
   grid-column: 2 / 3;
   grid-row: 1/2;
+} */
+
+/* spanning for rows i.e if we want to span an item using row number */
+/* lets consider element 7  */
+/* lets consider element 1 also check */
+.d1 {
+  /* grid-row: 1 / 5; */
+  /* grid-row: 1 / span 5; */
+  /* grid-row: 1 / -1; */
+}
+
+/* 
+
+.d7 {
+  grid-row: 3 / 6;
+} */
+
+.container-2 {
+  background-color: #000;
+  font-size: 40px;
+  margin: 40px;
+
+  width: 700px;
+  height: 600px;
+  /* CSS GRID */
+  display: grid;
+  grid-template-columns: 125px 200px 125px;
+  grid-template-rows: 250px 100px;
+
 }
