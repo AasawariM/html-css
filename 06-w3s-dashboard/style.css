@@ -8,7 +8,6 @@
   width: 700px;
   margin: 0 auto;
 } */
-
 body {
   font-family: "Source Sans 3";
   background-color: #fff;
@@ -66,7 +65,7 @@ body {
   font-style: italic;
   border-radius: 50px;
   padding: 8px 12px;
-  font-weight: 200px;
+  font-weight: 200;
   background-image: url(/assets/images/search.png);
   background-position: center;
   background-position-x: 150px;
@@ -153,12 +152,9 @@ body {
 }
 
 .sign-in-btn {
-  /* position: relative; */
   width: 95px;
   text-transform: capitalize;
   height: 40px;
-  /* top: 50%; */
-  /* margin-top: -20px; */
   background-color: #04AA6D;
   color: #fff;
   border-radius: 8px;
@@ -166,8 +162,6 @@ body {
   line-height: 22px;
   border: none;
   margin-right: 10px;
-  /* z-index: 4; */
-  /* font-family: "Source Sans Pro", sans-serif; */
 }
 
 
@@ -188,13 +182,15 @@ body {
   /* font-style: italic; */
   /* background-color: transparent; */
   background-color: #282A35 !important;
-  white-space: nowrap;
-  overflow: auto;
-  scrollbar-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
 }
 
 .navbar a {
-  display: inline-block;
+  display: block;
   margin: 0;
   text-align: center;
   /* background-color: #059862; */
@@ -212,7 +208,10 @@ body {
 
 #hero-section {
   color: white;
-  padding: 80px;
+  display: block;
+  text-align: center;
+  padding: 80px 0px;
+  /* border: 2px solid black; */
 }
 
 #hero-section h1 {
@@ -256,59 +255,37 @@ body {
   padding-bottom: 10px;
 }
 
-/* #hero-section input {
-  width: 30%;
-  padding: 10px;
-  padding-left: 25px;
-  background-color: white;
-  border: 1px solid #282A35;
-  border-right: 1px solid #04AA6D;
-  font-size: 17px;
-  border-radius: 25px;
-}
-
-#input-btn {
-  border-radius: 25px;
-  width: 20%;
-  padding: 10px;
-  background: #04AA6D;
-  color: white;
-  font-size: 17px;
-  border: 1px solid #282A35;
-  border-left: none;
-  cursor: pointer;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-} */
-
 .search-box {
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* width: 40%; */
-  padding: 10px 30%;
+  padding: 10px 0px;
 }
 
 .search-box input {
-  /* flex: 1; */
-  padding: 10px;
-  background-color: white;
-  /* border: 1px solid #282A35; */
+  padding: 13px;
   font-size: 17px;
-  border: none;
-  width: 80%;
+  border: 1px solid #282A35;
+  border-radius: 25px;
+  float: left;
+  width: 25%;
   padding-left: 25px;
-  margin-left: 20px;
-  font-family: inherit;
-  font-weight: 600;
+  background: white;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
   border-right: 1px solid #04AA6D;
-  border-radius: 25px 0 0 25px;
+  outline: 0;
 }
 
 #input-btn {
-  width: 20%;
+  width: 6.5%;
   background: #04AA6D;
   color: white;
+  padding: 11px;
   border: none;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   font-size: 17px;
   border-radius: 0 25px 25px 0;
   cursor: pointer;
@@ -427,7 +404,7 @@ footer {
 
 .footerlinks {
 
-  padding: 40px 60px;
+  padding: 40px 50px;
 }
 
 .footerlinks a {
@@ -494,7 +471,8 @@ footer {
 footer p {
   /* border: 2px solid black; */
   color: #ddd;
-  padding: 10px 370px;
+  margin: 0px 20%;
+  padding: 10px 50px;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
@@ -745,7 +723,7 @@ aside {
 }
 
 .browse-btn {
-  width: 90vh;
+  width: 40%;
   /* text-align: center; */
   padding: 18px 5px;
   color: #fff;

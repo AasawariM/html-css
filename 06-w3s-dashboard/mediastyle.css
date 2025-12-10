@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+  #hero-section {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  #hero-section h1 {
+    font-size: 50px;
+  }
+
+  #hero-section h2 {
+    font-size: 21px;
+  }
+
+  .search-box input {
+    width: 85%;
+    padding-left: 10px;
+    font-size: 16px;
+    padding: 13px;
+  }
+
+  .search-box #input-btn {
+    width: 25%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 1024px) {
+
+  #hero-section h1 {
+    font-size: 60px;
+  }
+
+  .search-box input {
+    width: 50%;
+    font-weight: 500;
+    padding: 12px 10px;
+    padding-left: 25px;
+  }
+
+  .search-box #input-btn {
+    width: 12%;
+    padding: 10px;
+  }
+}
