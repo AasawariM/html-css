@@ -666,22 +666,18 @@ aside h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  justify-items: center;
-  align-items: center;
-
-
-  justify-content: center;
-  align-content: center;
-  gap: 10% 5%;
-  padding: 10%;
+  gap: 40px;
+  padding: 60px 20px;
 }
 
 .card-item {
   color: #000;
-  justify-self: stretch;
+  justify-self: center;
   align-self: center;
   /* border: 2px solid red; */
   padding: 45px;
+  width: 80%;
+  max-width: 600px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
