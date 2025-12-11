@@ -1,4 +1,6 @@
 @media only screen and (max-width: 600px) {
+
+  /* hero-section */
   #hero-section {
     padding-left: 35px;
     padding-right: 35px;
@@ -23,10 +25,21 @@
     width: 25%;
     padding: 10px;
   }
+
+  /* html section */
+  .html {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .example {
+    display: none;
+  }
 }
 
 @media only screen and (min-width:601px) and (max-width: 1024px) {
 
+  /* hero section */
   #hero-section h1 {
     font-size: 60px;
   }
@@ -41,5 +54,22 @@
   .search-box #input-btn {
     width: 12%;
     padding: 10px;
+  }
+
+  /* html section */
+  .html {
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 2%;
+
+  }
+
+  .example {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .content {
+    width: 100%;
   }
 }
