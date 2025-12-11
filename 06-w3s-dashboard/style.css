@@ -508,13 +508,15 @@ footer {
 }
 
 /* html */
-.html {
+.html,
+.css,
+.js {
   background-color: #D9eee1;
   margin-top: -10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5% 0 5% 5%;
+  padding: 5% 0 8% 5%;
 }
 
 /* left side */
@@ -582,6 +584,14 @@ footer {
   background: #ffb3bb;
 }
 
+.light {
+  background-color: #fff;
+}
+
+.light:hover {
+  background-color: #E7E9EB;
+}
+
 /* right side */
 .example {
   width: 38%;
@@ -609,8 +619,29 @@ aside h2 {
   line-height: 1.8rem;
 }
 
+
+/* CSS */
+.css {
+  background-color: #FFF4A3;
+}
+
+/* Javascript */
+.js {
+  background-color: #282A35;
+}
+
+.js .content {
+  color: white;
+}
+
+.js h1 {
+  text-transform: capitalize;
+  font-size: 69px;
+}
+
 /* common green button */
 .green-btn {
+  text-transform: capitalize;
   background-color: #04AA6D;
   border: none;
   color: white;
@@ -687,20 +718,15 @@ aside h2 {
 } */
 
 
-.css {
-  background-color: #FFF4A3;
-  padding: 40px;
-}
-
 /* pseudo classes */
-.lang-list li:first-child {
+/* .lang-list li:first-child {
   background-color: #04AA6D;
 }
 
 .css .lang-list li:nth-child(2) {
   background-color: #282A35;
   color: #fff;
-}
+} */
 
 .w3s-spaces {
   text-transform: capitalize;
