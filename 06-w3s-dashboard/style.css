@@ -666,8 +666,8 @@ aside h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  gap: 40px;
-  padding: 60px 20px;
+  gap: 40px 40px;
+  padding: 40px 100px;
 }
 
 .card-item {
@@ -677,7 +677,8 @@ aside h2 {
   /* border: 2px solid red; */
   padding: 45px;
   width: 80%;
-  max-width: 600px;
+
+  max-width: 500px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
@@ -742,6 +743,134 @@ aside h2 {
   background-color: #E7E9EB;
 }
 
+
+/* ********************card 2****************************************** */
+
+.card-2 {
+  background-color: #282A35 !important;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 40px 60px;
+  padding: 0px 100px;
+}
+
+
+.card-item2 {
+  color: #000;
+  width: 90%;
+  max-width: 500px;
+  font-size: 14px;
+  font-weight: 100;
+  margin: 5px 40px;
+  padding: 45px;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-item2:hover {
+  opacity: 0.9;
+}
+
+#c21 {
+
+  background-color: #FFC0C7;
+}
+
+#c22 {
+  background-color: #FFF4A3;
+}
+
+#c23 {
+
+  background-color: #96D4D4;
+}
+
+#c24 {
+  background-color: #FFF4A3;
+}
+
+#c25 {
+
+  background-color: #FFC0C7;
+}
+
+#c26 {
+  background-color: #D9EEE1;
+}
+
+/* ********************************card 1 ******************************* */
+
+.card-1 {
+  background-color: #282A35 !important;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 90px;
+
+}
+
+.card-item1 {
+  justify-self: center;
+  color: #000;
+  width: 80%;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10% 0;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card-item1:hover {
+  opacity: 0.9;
+}
+
+#c31 {
+
+  background-color: #F3ECEA
+}
+
+#c32 {
+  background-color: #D9EEE1;
+}
+
+#c33 {
+
+  background-color: #96D4D4;
+}
+
+#c34 {
+  background-color: #FFC0C7;
+}
+
+
+#c35 {
+  background-color: #FFF4A3;
+}
+
+#c36 {
+  background-color: #F3ECEA;
+}
+
+#c37 {
+  background-color: #E7E9EB;
+}
+
+#c38 {
+  background-color: #D9EEE1;
+}
+
+#c39 {
+  background-color: #E7E9EB;
+}
 
 /* .lang-list {
   list-style: none;
@@ -1166,129 +1295,6 @@ aside h2 {
 
 #dot3 {
   background-color: #5AC05A;
-}
-
-/* ********************card 2****************************************** */
-
-.card-2 {
-  background-color: #282A35 !important;
-  color: white;
-  display: flex;
-  align-items: flex-start;
-  padding: 60px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.card-item2 {
-  color: #000;
-  width: 38%;
-  font-size: 14px;
-  font-weight: 100;
-  margin: 30px;
-  padding: 3%;
-  text-align: center;
-  border-radius: 5px;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.card-item2:hover {
-  opacity: 0.9;
-}
-
-#c21 {
-
-  background-color: #FFC0C7;
-}
-
-#c22 {
-  background-color: #FFF4A3;
-}
-
-#c23 {
-
-  background-color: #96D4D4;
-}
-
-#c24 {
-  background-color: #FFF4A3;
-}
-
-#c25 {
-
-  background-color: #FFC0C7;
-}
-
-#c26 {
-  background-color: #D9EEE1;
-}
-
-
-.card-1 {
-  background-color: #282A35 !important;
-  color: white;
-  display: flex;
-  align-items: flex-start;
-  padding: 0px 60px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.card-item1 {
-  color: #000;
-  width: 13%;
-  font-size: 30px;
-  font-weight: 500;
-  margin: 25px;
-  padding: 2%;
-  text-align: center;
-  border-radius: 5px;
-  text-transform: capitalize;
-  cursor: pointer;
-}
-
-.card-item1:hover {
-  opacity: 0.9;
-}
-
-#c31 {
-
-  background-color: #F3ECEA
-}
-
-#c32 {
-  background-color: #D9EEE1;
-}
-
-#c33 {
-
-  background-color: #96D4D4;
-}
-
-#c34 {
-  background-color: #FFC0C7;
-}
-
-
-#c35 {
-  background-color: #FFF4A3;
-}
-
-#c36 {
-  background-color: #F3ECEA;
-}
-
-#c37 {
-  background-color: #E7E9EB;
-}
-
-#c38 {
-  background-color: #D9EEE1;
-}
-
-#c39 {
-  background-color: #E7E9EB;
 }
 
 /* #like { */
