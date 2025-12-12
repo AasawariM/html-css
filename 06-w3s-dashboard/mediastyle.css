@@ -48,19 +48,28 @@
     padding: 70% 30px 10% 30px;
   }
 
+  /* card 2 */
   .card-2 {
-
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 0;
-    margin: 0;
     padding: 5px 0;
   }
 
   .card-2 .card-item2 {
-    width: 70%;
+    width: 68%;
   }
 
+  .card-2 :first-child {
+    margin-top: 20px;
+  }
+
+  .second-card-2 :nth-child(4) {
+    margin-bottom: 50px;
+  }
+
+
+  /* card 3 */
   .card-1 {
     grid-template-columns: repeat(1, 1fr);
     padding: 0px 15px;
@@ -69,6 +78,17 @@
 
   .card-1 .card-item1 {
     width: 100%;
+  }
+
+  /* signup / signin */
+
+  #sign-up .card-title {
+    font-size: 60px;
+    text-align: center;
+  }
+
+  .hide-small {
+    display: none;
   }
 }
 
@@ -123,6 +143,7 @@
     width: 88%;
   }
 
+  /* card 2 */
   .card-2 {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -136,6 +157,7 @@
     max-width: 750px;
   }
 
+  /* card 1 */
   .card-1 {
     grid-template-columns: repeat(2, 1fr);
     padding: 40px 20px;
@@ -144,5 +166,15 @@
 
   .card-1 .card-item1 {
     width: 100%;
+  }
+
+  /* signin / signup */
+  #sign-up .card-para {
+    margin: 0px;
+    padding: 20px;
+  }
+
+  .second-card-2 :nth-child(4) {
+    margin-bottom: 50px;
   }
 }

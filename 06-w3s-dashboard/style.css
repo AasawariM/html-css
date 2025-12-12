@@ -310,20 +310,6 @@ body {
   color: #FFF4A3;
 }
 
-#sign-up {
-  /*top and bottom | left and right */
-  padding: 25px 18px;
-  /* border: 2px solid black; */
-  text-align: center;
-}
-
-#sign-up p {
-  font-weight: normal;
-  /* font-family: serif; */
-  margin-top: 30px;
-  padding: auto;
-  /* border: 2px solid black; */
-}
 
 #code-editor {
   color: white;
@@ -643,14 +629,11 @@ aside h2 {
 .green-btn {
   text-transform: capitalize;
   background-color: #04AA6D;
+  border-radius: 25px;
   border: none;
   color: white;
-  font-size: 16px;
-  padding: 11px 15px;
-  width: 220px;
-  margin: 12px 0 0 0;
-  border-radius: 25px;
-  display: block;
+  font-weight: 600;
+  font-size: 18px;
 
 }
 
@@ -658,6 +641,11 @@ aside h2 {
   background-color: #059862;
 }
 
+.html-btn {
+  padding: 11px 15px;
+  width: 220px;
+  margin: 12px 0 0 0;
+}
 
 /* ********************card 3****************************************** */
 .card-3 {
@@ -756,7 +744,6 @@ aside h2 {
   padding: 0px 100px;
 }
 
-
 .card-item2 {
   color: #000;
   width: 90%;
@@ -773,6 +760,10 @@ aside h2 {
 
 .card-item2:hover {
   opacity: 0.9;
+}
+
+.second-card-2 {
+  padding-bottom: 100px;
 }
 
 #c21 {
@@ -870,6 +861,44 @@ aside h2 {
 
 #c39 {
   background-color: #E7E9EB;
+}
+
+
+
+/* **********COMMON CARD******************** */
+.card-title,
+.hide-small {
+  font-size: 65px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.card-para {
+  font-size: 20px;
+  padding: 25px;
+  font-weight: 600;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+/* ***************sign in / sign up ***********************/
+#sign-up {
+  /*top and bottom | left and right */
+  padding: 65px 18px;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+
+.sign-up-btn {
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
 }
 
 /* .lang-list {
@@ -972,22 +1001,6 @@ aside h2 {
   text-transform: capitalize;
   padding: 40px;
   background-color: #F3ECEA;
-}
-
-.card-title {
-  font-size: 65px;
-  font-weight: 700;
-  padding: 10px;
-}
-
-.card-para {
-  font-size: 20px;
-  padding: 8px;
-  font-weight: 500;
-}
-
-.card-img {
-  padding: 20px;
 }
 
 .color-picker .card-img {
