@@ -957,6 +957,70 @@ aside h2 {
   font-size: 21px;
 }
 
+
+/* ********************* For Teachers ********************************* */
+
+.for-teachers {
+  background-color: #282A35;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 78px 30px 96px 30px;
+  text-align: center;
+}
+
+.left-content {
+  font-size: 20px;
+  margin: auto;
+  height: auto;
+  padding: 3%;
+}
+
+.left-content h1 {
+  line-height: 55px;
+  margin-bottom: 16px;
+  padding-top: 11px;
+  padding-bottom: 20px;
+}
+
+.points {
+  text-align: center;
+  margin: 16px 0;
+  padding-left: 40px;
+}
+
+.left-content ul {
+  display: inline-block;
+}
+
+.left-content ul li {
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.left-content i {
+  margin-right: 10px;
+}
+
+.for-teachers button {
+  margin: 20px;
+  padding: 11px;
+  width: 300px;
+}
+
+.teachers-img {
+  padding: 3%;
+  margin: auto;
+  margin-top: 16px;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+
 /* .lang-list {
   list-style: none;
   display: block;
@@ -1070,40 +1134,6 @@ aside h2 {
   background-color: #000;
 }
 
-
-/* for teachers */
-.for-teachers {
-  background-color: #282A35;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding: 80px 170px;
-}
-
-.for-teachers h4,
-.for-teachers h5,
-.for-teachers button {
-  margin: 10px 0px 0px 100px;
-  font-size: 20px;
-}
-
-.left-content h4 {
-  margin-bottom: 40px;
-}
-
-.left-content h5 {
-  font-weight: 500;
-  /* display: block; */
-}
-
-.left-content i {
-  margin-right: 10px;
-}
-
-.for-teachers button {
-  margin-top: 50px;
-}
 
 #career {
   background-color: #282A35;
