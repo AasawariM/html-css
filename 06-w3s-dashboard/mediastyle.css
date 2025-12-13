@@ -82,13 +82,24 @@
 
   /* signup / signin */
 
-  #sign-up .card-title {
+  .card-title {
     font-size: 60px;
     text-align: center;
   }
 
   .hide-small {
     display: none;
+  }
+
+  .card-para {
+    font-size: 18px;
+  }
+
+  /* code-editor */
+  #f-editor-btn,
+  #b-editor-btn {
+    font-size: 15px;
+    width: 100%;
   }
 }
 

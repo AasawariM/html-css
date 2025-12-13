@@ -310,66 +310,6 @@ body {
   color: #FFF4A3;
 }
 
-
-#code-editor {
-  color: white;
-  padding: 70px 3px 85px 3px;
-}
-
-#code-editor .h1 {
-  margin: 2px 0 -20px 0;
-}
-
-.text-center {
-  text-align: center;
-}
-
-#code-editor img {
-  padding: 20px 0;
-  width: 70%;
-  height: auto;
-}
-
-.editor-btn {
-  /* border: 2px solid violet; */
-  padding-left: 15%;
-}
-
-#f-editor-btn {
-  height: 2.5em;
-  width: 18em;
-  font-size: 17px;
-  border-radius: 5px;
-  background-color: #04AA6D;
-  color: #fff;
-  text-transform: capitalize;
-  font-weight: 600;
-  margin-bottom: 20px;
-  border: none;
-}
-
-#b-editor-btn {
-  height: 2.5em;
-  width: 22em;
-  border-radius: 5px;
-  font-size: 17px;
-  background-color: #FFF4A3;
-  color: #000;
-  text-transform: capitalize;
-  font-weight: 600;
-  border: none;
-}
-
-#f-editor-btn:hover {
-  background-color: #059862;
-  cursor: pointer;
-}
-
-#b-editor-btn:hover {
-  background-color: #fff080;
-  cursor: pointer;
-}
-
 footer {
   color: white;
   font-size: 14px;
@@ -763,7 +703,7 @@ aside h2 {
 }
 
 .second-card-2 {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 #c21 {
@@ -870,12 +810,12 @@ aside h2 {
 .hide-small {
   font-size: 65px;
   font-weight: 700;
-  padding: 10px;
+  padding: 5px;
 }
 
 .card-para {
   font-size: 20px;
-  padding: 25px;
+  padding: 20px;
   font-weight: 600;
 }
 
@@ -900,6 +840,78 @@ aside h2 {
   padding: 15px;
   width: 300px;
 }
+
+
+/* ********************** code editor *********************************** */
+#code-editor {
+  color: white;
+  padding: 70px 16px 85px 16px;
+}
+
+#code-editor .h1 {
+  margin: 2px 0 -20px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#code-editor img {
+  width: 100%;
+  max-width: 974px;
+  padding: 20px 0;
+}
+
+.image-btns {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  width: 100%;
+  max-width: 974px;
+  margin: auto;
+  gap: 18px;
+}
+
+#f-editor-btn {
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 18px;
+  vertical-align: middle;
+  font-size: 17px;
+  background-color: #04AA6D;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#b-editor-btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 18px;
+  font-size: 17px;
+  vertical-align: middle;
+  background-color: #FFF4A3;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: none;
+}
+
+#f-editor-btn:hover {
+  background-color: #059862;
+  cursor: pointer;
+}
+
+#b-editor-btn:hover {
+  background-color: #fff080;
+  cursor: pointer;
+}
+
+
 
 /* .lang-list {
   list-style: none;
