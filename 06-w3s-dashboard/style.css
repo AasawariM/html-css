@@ -815,7 +815,7 @@ aside h2 {
 
 .card-para {
   font-size: 20px;
-  padding: 20px;
+  padding: 5px;
   font-weight: 600;
 }
 
@@ -911,7 +911,51 @@ aside h2 {
   cursor: pointer;
 }
 
+/* ****************************** w3school spaces ************************ */
+.w3s-spaces {
+  text-transform: capitalize;
+  padding: 75px 20px 80px 20px;
+  margin: auto;
+}
 
+.w3s-spaces .card-para {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.w3s-spaces h3 {
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.w3s-spaces a {
+  color: #04AA6D;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.w3s-spaces a:hover {
+  color: #059862;
+}
+
+.w3s-spaces a:active {
+  color: #000;
+}
+
+.w3s-spaces .card-img {
+  border: 5px solid #f1f1f1;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.w3s-btn {
+  margin: 20px;
+  padding: 12px 18px;
+  width: 300px;
+  font-size: 21px;
+}
 
 /* .lang-list {
   list-style: none;
@@ -983,31 +1027,6 @@ aside h2 {
   color: #fff;
 } */
 
-.w3s-spaces {
-  text-transform: capitalize;
-  padding: 30px;
-}
-
-.w3s-spaces .card-para {
-  margin: 0 350px;
-  font-size: 24px;
-  font-weight: 400px;
-  line-height: 40px;
-}
-
-.w3s-spaces a {
-  color: #04AA6D;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.w3s-spaces a:hover {
-  color: #059862;
-}
-
-.w3s-spaces a:active {
-  color: #000;
-}
 
 .color-picker {
   text-transform: capitalize;
