@@ -130,9 +130,67 @@
   .browse-btn {
     width: 100%;
   }
+
+  /* career */
+  #w3_cert_arrow_default {
+    display: none;
+  }
+
+  #career button {
+    width: 100%;
+    margin: 0;
+  }
+
+  #career h1 {
+    font-size: 55px;
+  }
+
+  #career p {
+    font-size: 40px;
+  }
+
+  #career {
+    margin-bottom: 10px;
+    padding: 10px 60px 50px 60px;
+  }
+
+  #w3_cert_badge_default {
+    top: -35px;
+    right: 16%;
+    width: 100px;
+  }
+
+  /* how to section */
+  .editor p {
+    margin-left: 2px;
+    font-size: 14px;
+  }
+
+  .dots {
+    height: 12px;
+    width: 12px;
+  }
+
+  .text {
+    bottom: 10px;
+  }
+
+  .how-to-btn {
+    width: 82%;
+  }
 }
 
-@media only screen and (min-width:601px) and (max-width: 993px) {
+@media only screen and (min-width:768px) and (max-width: 800px) {
+  #career {
+    padding: 20px 60px 50px 60px;
+  }
+
+  #w3_cert_arrow_default {
+    display: none;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width: 998px) {
 
   /* hero section */
   #hero-section h1 {
@@ -222,4 +280,17 @@
   .for-teachers {
     flex-direction: column;
   }
+
+  /* career */
+  #w3_cert_arrow_default {
+    right: 100px;
+    bottom: -10px;
+  }
+
+  #w3_cert_badge_default {
+    width: 150px;
+    right: 8%;
+    bottom: -40px;
+  }
+
 }
