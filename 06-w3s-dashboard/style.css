@@ -1020,6 +1020,52 @@ aside h2 {
   max-width: 500px;
 }
 
+/* ******************** color picker *************************** */
+
+.color-picker {
+  text-transform: capitalize;
+  padding: 40px;
+  background-color: #F3ECEA;
+}
+
+.color-picker .color-picker {
+  width: 180px;
+  height: 160px;
+  margin-top: 10px;
+}
+
+.color-picker img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* ******************** web templates *************************** */
+
+.web-temp {
+  text-transform: capitalize;
+  padding: 30px;
+  padding-bottom: 100px;
+  background-color: #E7E9EB;
+}
+
+.browse-btn {
+  width: 55%;
+  text-align: center;
+  padding: 18px 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #282A35;
+  text-transform: capitalize;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.browse-btn:hover {
+  background-color: #000;
+}
+
 
 /* .lang-list {
   list-style: none;
@@ -1090,50 +1136,6 @@ aside h2 {
   background-color: #282A35;
   color: #fff;
 } */
-
-
-.color-picker {
-  text-transform: capitalize;
-  padding: 40px;
-  background-color: #F3ECEA;
-}
-
-.color-picker .card-img {
-  /* margin: 20px; */
-  height: 160px;
-  /* border: 2px solid black; */
-}
-
-.color-picker img:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.web-temp {
-  text-transform: capitalize;
-  padding: 40px;
-  background-color: #E7E9EB;
-}
-
-.browse-btn {
-  width: 40%;
-  /* text-align: center; */
-  padding: 18px 5px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #282A35;
-  text-transform: capitalize;
-  border-radius: 25px;
-  margin: 10px;
-  margin-bottom: 60px;
-}
-
-.browse-btn:hover {
-  background-color: #000;
-}
-
 
 #career {
   background-color: #282A35;
