@@ -14,13 +14,26 @@ body {
   /* position: relative; */
 }
 
-.menu {
+.top-header {
+  width: 100%;
   background-color: #fff;
-  font-size: 16px;
-  height: 54px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+.menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 54px;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+.btn-mobile .fa-caret-up {
+  display: none;
 }
 
 .fa-caret-down {
@@ -30,16 +43,14 @@ body {
 #logo {
 
   height: 36px;
-  margin-left: 13px;
+  margin-left: 12px;
 }
 
 .left-menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* height: 100%; */
-  gap: 16px;
-  /* background-color: #000; */
+  gap: 30px;
 }
 
 .left-menu a {
