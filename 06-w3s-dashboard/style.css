@@ -310,114 +310,6 @@ body {
   color: #FFF4A3;
 }
 
-footer {
-  color: white;
-  font-size: 14px;
-}
-
-.f-footer {
-  padding: 40px 80px 20px 80px;
-  max-width: 1500px;
-  margin: auto;
-  /* border: 2px solid black; */
-}
-
-.links {
-  /* border: 2px solid black; */
-  display: inline-flex;
-  gap: 10px;
-}
-
-.footerlinks {
-
-  padding: 40px 50px;
-}
-
-.footerlinks a {
-  color: #FFF4A3;
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.footerlinks a:hover {
-  text-decoration: underline;
-}
-
-.footerlinks:nth-child(1) {
-  padding: 30px 10px 30px 40px;
-}
-
-.footerlinks2 {
-  display: inline-block;
-  padding-left: 90px;
-  padding-right: 135px;
-  color: #ddd;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.footerlinks2 h5 {
-  margin: 10px 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.footerlinks2 a {
-  text-decoration: none;
-  color: #ddd;
-}
-
-.footerlinks2 a:hover {
-  color: #FFF4A3;
-}
-
-.f-footer .icons {
-  /* border: 2px solid black; */
-  color: #ddd;
-  text-align: center;
-  padding: 60px 40px 10px 40px;
-}
-
-.icons a {
-  margin: 0px 10px;
-  text-decoration: none;
-  color: #ddd;
-  font-weight: 600;
-}
-
-.icons a:hover {
-  color: #FFF4A3;
-}
-
-footer p {
-  /* border: 2px solid black; */
-  color: #ddd;
-  margin: 0px 20%;
-  padding: 10px 50px;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  font-weight: 500;
-}
-
-footer h6 {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-footer span {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-footer span:hover {
-  color: #FFF4A3;
-}
 
 #code-editor,
 #hero-section,
@@ -1309,6 +1201,118 @@ aside h2 {
 
 #dot3 {
   background-color: #5AC05A;
+}
+
+
+
+/* ************************ footer **************************** */
+footer {
+  color: white;
+  font-size: 14px;
+}
+
+.f-footer {
+  padding: 40px 80px 50px 80px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.links {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footerlinks {
+  padding: 40px 60px;
+  width: auto;
+}
+
+.footerlinks a {
+  color: #FFF4A3;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footerlinks a:hover {
+  text-decoration: underline;
+}
+
+.footerlinks:nth-child(1) {
+  padding: 30px 10px 30px 40px;
+}
+
+.footerlinks2 {
+  overflow: hidden;
+  width: auto;
+  display: inline-block;
+  padding-left: 90px;
+  padding-right: 135px;
+  color: #ddd;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.footerlinks2 h5 {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.footerlinks2 a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+.footerlinks2 a:hover {
+  color: #FFF4A3;
+}
+
+.f-footer .icons {
+  font-size: 15px;
+  color: #ddd;
+  text-align: center;
+  padding: 60px 40px 10px 40px;
+}
+
+.icons a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.icons a:hover {
+  color: #FFF4A3;
+}
+
+footer p {
+  color: #ddd;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  font-weight: 500;
+  padding: 0 24%;
+}
+
+footer h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer span:hover {
+  color: #FFF4A3;
 }
 
 
