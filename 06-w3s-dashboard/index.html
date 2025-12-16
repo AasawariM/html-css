@@ -7,15 +7,15 @@
     <link href="/style.css" rel="stylesheet" />
     <link href="/mediastyle.css" rel="stylesheet" />
     <link href="/top-navigation.css" rel="stylesheet" />
+    <link href="/mobile-navbar.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-
     <title>Document</title>
     <!-- internal css -->
     <style>
@@ -24,20 +24,40 @@
         text-decoration: none;
       }
     </style>
+    <script>
+      function myFunction() {
+        const menu = document.getElementById("myDropdownMenu");
+        const icon = document.getElementById("myIcon");
+
+        menu.classList.toggle("show");
+
+        icon.classList.toggle("fa-caret-down");
+        icon.classList.toggle("fa-caret-up");
+      }
+    </script>
   </head>
   <body>
     <!-- top navigation -->
     <header>
       <nav class="left-navbar">
         <ul>
-          <li class="id"><img src="/assets/images/logo.png" /></li>
-          <li class="hoverlink">tutorials<i class="fa fa-caret-down"></i></li>
-          <li class="hoverlink">references<i class="fa fa-caret-down"></i></li>
-          <li class="hoverlink">exercises<i class="fa fa-caret-down"></i></li>
+          <li><img src="/assets/images/logo.png" /></li>
           <li class="hoverlink">
-            certificates<i class="fa fa-caret-down"></i>
+            tutorials<i class="fa fa-caret-down" style="font-size: 13px"></i>
           </li>
-          <li id="menu-list">menu<i class="fa fa-caret-down"></i></li>
+          <li class="hoverlink">
+            references<i class="fa fa-caret-down" style="font-size: 13px"></i>
+          </li>
+          <li class="hoverlink">
+            exercises<i class="fa fa-caret-down" style="font-size: 13px"></i>
+          </li>
+          <li class="hoverlink">
+            certificates<i class="fa fa-caret-down" style="font-size: 13px"></i>
+          </li>
+          <li id="menu-list" class="hoverlink active" onclick="myFunction()">
+            menu<i id="myIcon" class="fa fa-caret-down"></i>
+          </li>
+
           <li>
             <input class="search-input" placeholder="search..." />
           </li>
@@ -58,7 +78,53 @@
         </ul>
       </nav>
     </header>
+    <!-- mobile navigation -->
 
+    <div class="mobile-container" id="myDropdownMenu">
+      <div class="mobile-nav-item">
+        <span>tutorials</span>
+        <i class="fa fa-caret-down fa-lg"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>references</span>
+        <i class="fa fa-caret-down fa-lg"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>exercies</span>
+        <i class="fa fa-caret-down fa-lg"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>certificates</span>
+        <i class="fa fa-caret-down fa-lg"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>spaces</span>
+        <!-- <i class="fa fa-caret-down"></i> -->
+        <i class="fa fa-solid fa-code"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>get certified</span>
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>plus</span>
+        <i class="fa fa-wand-sparkles"></i>
+      </div>
+      <div class="mobile-nav-item">
+        <span>academy</span>
+      </div>
+      <div class="mobile-nav-item">
+        <span>all our services</span>
+        <i class="fa fa-caret-down fa-lg"></i>
+      </div>
+      <div class="brands mobile-nav-item">
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
     <!-- 2nd navbar -->
     <nav>
       <div class="navbar text-center" style="text-transform: uppercase">
@@ -856,18 +922,18 @@ let x = document.getElementById("b1");
       </div>
       <div class="icons">
         <a href="https://www.youtube.com/@w3schools"
-          ><i class="fa fa-youtube"></i
+          ><i class="fa-brands fa-youtube"></i
         ></a>
         <a href="https://www.linkedin.com/company/w3schools.com/"
-          ><i class="fa fa-linkedin"></i
+          ><i class="fa-brands fa-linkedin"></i
         ></a>
-        <a href="#"><i class="fa fa-discord">dis</i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
         <a href="https://discord.com/invite/w3schools"
-          ><i class="fa fa-facebook"></i
+          ><i class="fa-brands fa-facebook"></i
         ></a>
         <a href="https://www.instagram.com/w3schools.com_official/"
-          ><i class="fa"></i></a
-        >
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
         <div class="w3-hide-large" style="margin-top: 16px"></div>
         <a href="/forum/index.php" title="Forum" class="textlink">FORUM</a>
         <a

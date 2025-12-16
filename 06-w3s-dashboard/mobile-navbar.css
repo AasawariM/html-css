@@ -1,0 +1,47 @@
+.mobile-container {
+  position: fixed;
+  top: 56px;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* max-width: 768px; */
+  background-color: #fff;
+  color: black;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mobile-nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(67, 68, 74);
+  padding: 20px 30px;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.mobile-nav-item:last-child {
+  border: none;
+}
+
+.mobile-nav-item .fa {
+  right: 40px;
+}
+
+.brands {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+@media (min-width:800px) {
+
+  .mobile-container,
+  .mobile-container.show {
+    display: none;
+  }
+}
