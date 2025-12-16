@@ -6,6 +6,7 @@
     <!-- external css -->
     <link href="/style.css" rel="stylesheet" />
     <link href="/mediastyle.css" rel="stylesheet" />
+    <link href="/top-navigation.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
@@ -25,72 +26,40 @@
     </style>
   </head>
   <body>
-    <!-- <h1>Hello World!</h1> -->
-    <header class="top-header">
-      <div class="menu">
-        <!-- left menu -->
-
-        <div class="left-menu">
-          <a href="https://www.w3schools.com/">
-            <img id="logo" src="/assets/images/logo.png" />
-          </a>
-          <nav>
-            <a href="#tutorial">tutorials<i class="fa fa-caret-down"></i></a>
-            <a href="#references"
-              >references <i class="fa fa-caret-down"></i
-            ></a>
-            <a>exercises <i class="fa fa-caret-down"></i></a>
-            <a>certificates<i class="fa fa-caret-down"></i></a>
-          </nav>
-          <input class="search-input" placeholder="Search..." />
-          <a id="dots-icon"
-            ><img src="/assets/images/dots.png" width="22px" />
-            <span class="tooltiptext">See More</span></a
-          >
-        </div>
-        <!-- menu-nav button -->
-        <a class="btn-mobile"
-          >menu<i class="fa fa-caret-down"></i><i class="fa fa-caret-up"></i
-        ></a>
-
-        <!-- right menu -->
-        <div class="right-menu">
-          <!-- <a><img src="/assets/images/code.png" width="20px" />spaces</a>
-          <a><img src="/assets/images/degree.png" width="20px" />teachers </a>
-          <a><img src="/assets/images/sparkle.png" width="14px" />upgrade</a>
-          <a
-            ><img src="/assets/images/cart.png" width="20px" />get certified
-          </a> -->
-          <a>spaces</a>
-          <a>teachers </a>
-          <a>upgrade</a>
-          <a>get certified</a>
-
-          <button class="sign-in-btn">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="tnb-sign-in-icon"
-            >
-              <path
-                d="M7 7C8.933 7 10.5 5.433 10.5 3.5C10.5 1.567 8.933 0 7 0C5.067 0 3.5 1.567 3.5 3.5C3.5 5.433 5.067 7 7 7ZM9.33333 3.5C9.33333 4.78866 8.28866 5.83333 7 5.83333C5.71134 5.83333 4.66667 4.78866 4.66667 3.5C4.66667 2.21134 5.71134 1.16667 7 1.16667C8.28866 1.16667 9.33333 2.21134 9.33333 3.5Z"
-                fill="white"
-              ></path>
-              <path
-                d="M14 12.8333C14 14 12.8333 14 12.8333 14H1.16667C1.16667 14 0 14 0 12.8333C0 11.6667 1.16667 8.16667 7 8.16667C12.8333 8.16667 14 11.6667 14 12.8333ZM12.8333 12.8293C12.8316 12.5414 12.6539 11.6789 11.8625 10.8875C11.1016 10.1265 9.67062 9.33333 6.99999 9.33333C4.32936 9.33333 2.89841 10.1265 2.13745 10.8875C1.34605 11.6789 1.16833 12.5414 1.16667 12.8293H12.8333Z"
-                fill="white"
-              ></path>
-            </svg>
-            sign in
-          </button>
-        </div>
-      </div>
+    <!-- top navigation -->
+    <header>
+      <nav class="left-navbar">
+        <ul>
+          <li class="id"><img src="/assets/images/logo.png" /></li>
+          <li class="hoverlink">tutorials<i class="fa fa-caret-down"></i></li>
+          <li class="hoverlink">references<i class="fa fa-caret-down"></i></li>
+          <li class="hoverlink">exercises<i class="fa fa-caret-down"></i></li>
+          <li class="hoverlink">
+            certificates<i class="fa fa-caret-down"></i>
+          </li>
+          <li id="menu-list">menu<i class="fa fa-caret-down"></i></li>
+          <li>
+            <input class="search-input" placeholder="search..." />
+          </li>
+          <li><img class="search-img" src="/assets/images/search.png" /></li>
+          <li class="see-more">
+            <img class="dots-menu" src="/assets/images/dots.png" />
+            <span class="tooltiptext">See More</span>
+          </li>
+        </ul>
+      </nav>
+      <nav class="right-navbar">
+        <ul>
+          <li class="spaces">spaces</li>
+          <li class="teachers">teachers</li>
+          <li class="upgrade">upgrade</li>
+          <li class="get-certified">get certified</li>
+          <li><button class="sign-in-btn">sign up</button></li>
+        </ul>
+      </nav>
     </header>
 
-    <!--inline css-->
+    <!-- 2nd navbar -->
     <nav>
       <div class="navbar text-center" style="text-transform: uppercase">
         <!-- <a class="menu-prev" onclick="plusSlides(1)">&#10094;</a> -->

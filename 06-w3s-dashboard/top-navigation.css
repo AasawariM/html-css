@@ -152,6 +152,8 @@ li img {
   display: none;
 }
 
+/* Responsive top navbar */
+
 @media (max-width: 1240px) {
   .right-navbar .spaces {
     display: none;
@@ -192,6 +194,18 @@ li img {
   }
 }
 
+@media (max-width: 960px) {
+  .right-navbar .upgrade {
+    display: none;
+  }
+}
+
+@media (max-width: 824px) {
+  .right-navbar .get-certified {
+    display: none;
+  }
+}
+
 @media (max-width: 799px) {
 
   .right-navbar .upgrade,
@@ -205,6 +219,10 @@ li img {
 
   #menu-list {
     display: inline-flex;
+  }
+
+  .left-navbar ul {
+    gap: 20px;
   }
 }
 
